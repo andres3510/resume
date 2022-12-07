@@ -4,119 +4,175 @@
     <meta charset="UTF-8">
     <title>Resume by Luis Rios</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style>
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-        }
-    </style>
 </head>
-<body class="w3-light-grey">
 
-<!--Page Container-->
-<div class="w3-content w3-margin-top" style="max-width:1400px;">
-    <!--The Grid-->
-    <div class="w3-row-padding">
-        <!--Left Column-->
-        <div class="w3-third">
-            <div class="w3-white w3-text-grey w3-card-4">
-                <div class="w3-display-container">
-                    <img src="img/IMG_20190720_174000.jpg" style="width:100%" alt="Foto de perfil">
-                    <div class="w3-display-bottomleft w3-container w3-text-black">
-                        <h2>Luis Rios</h2>
-                    </div>
-                </div>
-                <div class="w3-container">
-                    <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i>Desarrollador</p>
-                    <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i>Pereira, Colombia</p>
-                    <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i>andres.3510@jala.university
-                    </p>
-                    <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i>305 9053064</p>
-                    <hr>
-                    <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>Skills</b>
-                    </p>
-                    <p>Java</p>
-                    <div class="w3-light-grey w3-round-xlarge w3-small">
-                        <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:90%">90%</div>
-                    </div>
-                    <p>HTML</p>
-                    <div class="w3-light-grey w3-round-xlarge w3-small">
-                        <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:85%">85%</div>
-                    </div>
-                    <p>CSS</p>
-                    <div class="w3-light-grey w3-round-xlarge w3-small">
-                        <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:80%">80%</div>
-                    </div>
-                    <p>JavaScript</p>
-                    <div class="w3-light-grey w3-round-xlarge w3-small">
-                        <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:75%">75%</div>
-                    </div>
-                    <br>
+<body>
+<div class="main-container">
+    <aside>
+        <figure id="profile-pic">
+            <img src="img/profile.jpg" alt="Luis Rios">
+            <figcaption>Luis Andrés Rios Noreña</figcaption>
+        </figure>
+        <section>
+            <h2>Contact</h2>
+            <dl>
+                <dt>Phone</dt>
+                <dd>+57 305 905 3064</dd>
+                <dt>Email</dt>
+                <dd>andres3510@outlook.com</dd>
+            </dl>
+            <div class="clear"></div>
+        </section>
+        <section>
+            <h2>Expertise</h2>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
 
-                    <p class="w3-large w3-text-theme"><b><i class="fa fa-globe fa-fw w3-margin-right w3-text-teal"></i>Languages</b></p>
-                    <p>Spanish</p>
-                    <div class="w3-light-grey w3-round-xlarge">
-                        <div class="w3-round-xlarge w3-teal" style="height:24px;width:100%"></div>
-                    </div>
-                    <p>English</p>
-                    <div class="w3-light-grey w3-round-xlarge">
-                        <div class="w3-round-xlarge w3-teal" style="height:24px;width:55%"></div>
-                    </div>
-                    <br>
-                </div>
-            </div><br>
+            </ul>
+        </section>
+        <section>
+            <h2>Education</h2>
+            <ul>
+                <li>
+                    Mechatronic Engineering <br>
+                    Universidad Tecnológica de pereira <br>
+                    2012 - 2017
+                </li>
+            </ul>
+        </section>
+        <section>
+            <h2>Personal skills</h2>
+            <ul>
+                <li>
+                    Teamwork
+                    <meter value="60" min="0" max="100"></meter>
+                </li>
+                <li>
+                    Leadership
+                    <meter value="70" min="0" max="100"></meter>
+                </li>
+                <li>
+                    Problem solving
+                    <meter value="30" min="0" max="100"></meter>
+                </li>
+                <li>
+                    Communication
+                    <meter value="60" min="0" max="100"></meter>
+                </li>
+            </ul>
+        </section>
+        <section>
+            <h2>Technical skills</h2>
+            <ul>
+                <li>
+                    HTML
+                    <meter value="50" min="0" max="100"></meter>
+                </li>
+                <li>
+                    CSS
+                    <meter value="50" min="0" max="100"></meter>
+                </li>
+                <li>
+                    JavaScript
+                    <meter value="30" min="0" max="100"></meter>
+                </li>
+                <li>
+                    JAVA
+                    <meter value="50" min="0" max="100"></meter>
+                </li>
+                <li>
+                    Python
+                    <meter value="40" min="0" max="100"></meter>
+                </li>
+            </ul>
+        </section>
+        <section>
+            <h2>Social contact</h2>
+            <ul>
+                <li>
+                    <a href="https://github.com/andres3510" class="social-item gh" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/luis-andr%C3%A9s-rios-nore%C3%B1a-15a814123/" target="_blank">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+            </ul>
+        </section>
+    </aside>
+    <main>
+        <section class="hero">
+            <h1>Luis Andrés Ríos Noreña</h1>
+            <h2>Mechatronic Engineering</h2>
+        </section>
+        <section class="about me">
+            <h2>About me</h2>
+            <p>Hi, I am Mechatronic Engineering, I have skills in CAD designs and implementation in IoT technology (internet of things), in addition I used my knowledge to guide classes in the field of engineering, I have mainly focused on the field of computer science about maintenance on PC.</p>
+        </section>
+        <section class="experience">
+            <h2>Experience</h2>
+                <article>
+                    <h3>autotronic technologist</h3>
+                    <h4>Impointer; Pereira,Risaralda,Colombia; 04/2022 - 07/2022</h4>
+                    <p>Train instructors in the use of HTC VIVE virtual reality equipment, and their respective configuration and installation.</p>
+                    <h5>Responsibilities</h5>
+                    <ul>
+                    <li>
+                        lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </li>
+                    <li>
+                        lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </li>
+            </ul>
+                </article>
+                <article>
+                    <h3>mechatronic technician</h3>
+                    <h4>i3 soluciones integrales, Cali,valle del cauca,Colombia, 04/2020 - 03/2021</h4>
+                    <p>Provide technical support in the prototyping laboratory that includes the use of Internet of Things (IoT) technology, and 3D printing, which is part of the CIDTI 4.0 smart territories project that runs in the city of Cali, in which pedagogical material was developing for the induction to the programming for the management of Arduino technology.</p>
+                    <h5>Responsibilities</h5>
+                    <ul>
+                <li>
+                    lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </li>
+                <li>
+                    lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </li>
+            </ul>
+            </article>
+        </section>
 
-        <!-- End Left Column -->
-        </div>
 
-        <!-- Right Column -->
-        <div class="w3-twothird">
 
-            <div class="w3-container w3-card w3-white w3-margin-bottom">
-                <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Work Experience</h2>
-                <div class="w3-container">
-                    <h5 class="w3-opacity"><b>Desarrollador</b></h5>
-                    <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Junio 2019 - <span class="w3-tag w3-teal w3-round">Actual</span></h6>
-                    <p>Desarrollador de software</p>
-                    <hr>
-                </div>
-                <div class="w3-container">
-                    <h5 class="w3-opacity"><b>Desarrollador</b></h5>
-                    <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Junio 2019 - <span class="w3-tag w3-teal w3-round">Actual</span></h6>
-                    <p>Desarrollador de software</p>
-                    <hr>
-                </div>
-            </div>
 
-            <div class="w3-container w3-card w3-white">
-                <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Education</h2>
-                <div class="w3-container">
-                    <h5 class="w3-opacity"><b>Universidad tecnológica de pereira</b></h5>
-                    <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2012 - <span class="w3-tag w3-teal w3-round">2017</span></h6>
-                    <p>Ingeniero mecatrónico</p>
-                    <hr>
-                </div>
-            </div>
-
-        <!-- End Right Column -->
-        </div>
-
-    <!-- End Grid -->
+<!--start references section-->
+<section>
+    <h2>References</h2>
+    <div class="references">
+    <article>
+        <figure>
+            <img src="img/1.jpg" alt="Luis Rios">
+            <figcaption>Luis Rios</figcaption>
+        </figure>
+        <span>John Doe</span>
+        <span>CEO at Company</span>
+    </article>
+    <article>
+        <figure>
+            <img src="img/2.jpg" alt="Luis Rios">
+            <figcaption>Luis Rios</figcaption>
+        </figure>
+        <span>John Doe</span>
+        <span>CEO at Company</span>
+    </article>
     </div>
+</section>
+<!--end references section-->
 
-    <!-- End Page Container -->
-    </div>
-
-<footer class="w3-container w3-teal w3-center w3-margin-top">
-    <p>Find me on social media.</p>
-    <i class="fa fa-facebook-official w3-hover-opacity"></i>
-    <i class="fa fa-instagram w3-hover-opacity"></i>
-    <i class="fa fa-snapchat w3-hover-opacity"></i>
-    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-    <i class="fa fa-twitter w3-hover-opacity"></i>
-    <i class="fa fa-linkedin w3-hover-opacity"></i>
-    <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
-</footer>
-
+</main>
+</div>
 </body>
 </html>
