@@ -1,20 +1,23 @@
 /*LAYOUT*/
+body{
+    display: flex;
+    justify-content: center;
+    font-family: 'Calibri', sans-serif;
+}
 .main-container {
     display: flex;
     width:1200px;
 }
 
 /*general*/
-.ul{
+ul{
     list-style-type: none;
-}
-.clear{
-    clear: both;
 }
 
 h1,
 h2 {
     text-transform: uppercase;
+    font-family: 'Calibri Light', sans-serif;
 }
 
 
@@ -22,8 +25,9 @@ h2 {
 
 aside{
     background-color: #647087;
-    width: 30%;
+    flex-basis: 25%;
     margin-right: 3%;
+    padding: 0 10px;
 }
 
 aside *{
@@ -43,11 +47,17 @@ aside section h2:first-child{
 }
 
 #profile-pic img{
-    border-radius: 60%;
-    width: 150px;
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
 }
 
 /*main*/
+
+main {
+    flex-basis: 75%;
+}
 
 main section > h2{
     text-transform: uppercase;
@@ -56,7 +66,7 @@ main section > h2{
 
 .hero {
     background-color: #647087;
-    box-shadow: 2px 2px 40px 1px #647087 inset;
+    box-shadow: 2px 2px 40px 1px #F7DDC3 inset;
     padding: 15% 0;
     text-align: center;
 }
@@ -64,25 +74,18 @@ main section > h2{
 .hero h2{
     color: white;
     border-top: 2px solid white;
-    letter-spacing: 15px;
+    letter-spacing: 10px;
 }
 
 .hero h1{
     letter-spacing: 10px;
 }
 
-.about-me {
-    background-color: #F7DDC3;
-}
-
-.about-me h2{
-    background-color: white;
-}
-
 .about-me p{
     line-height: 2em;
     background-color: #F7DDC3;
     padding: 5px;
+    text-align: justify;
 }
 
 article h3,
@@ -93,31 +96,45 @@ article ul{
     list-style-type: square;
 }
 
+li{
+    text-align: justify;
+}
+
 /*Reference*/
 .references{
     display: flex;
     flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
     background-color: #F7DDC3;
 }
 
 .references article{
-    width: 50%;
+    width: 30%;
+    padding: 30px;
+    margin: 10px;
+    color: white;
     text-align: center;
+    background-color: #647087;
 }
+
+
 
 /*DL*/
 
 dl{
     display: flex;
     flex-wrap: wrap;
+    padding: 0 0 0 40px;
 }
 
 dt,
 dd {
     line-height: 1.5em;
     border-top: 1px solid white;
-    flex-basis: 40%;
+    flex-basis: 60%;
     margin: 0;
+
 }
 
 dt:last-of-type,
@@ -130,15 +147,17 @@ dt{
 }
 
 /*Icons*/
+.social-item::before{
+    padding-right: 15px;
+}
+
 .gh::before{
-    content: "\f02d";
+    content: "\f082";
     font-family: "Font Awesome 5 Free", serif;
     font-weight: 900;
 }
 
-.social-item::before{
-    padding-right: 15px;
-}
+
 
 /*Meter*/
 meter{
@@ -147,9 +166,10 @@ meter{
 }
 
 meter::-webkit-meter-optimum-value{
-    background: #F7DDC3 none;
+    background: #EDC0AF none;
 }
 
 meter::-webkit-meter-bar{
-    background: white none;
+    background: #FFFFFF none;
 }
+
