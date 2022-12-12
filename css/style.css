@@ -64,20 +64,20 @@ main section > h2{
     letter-spacing: 5px;
 }
 
-.hero {
+.me {
     background-color: #647087;
     box-shadow: 2px 2px 40px 1px #F7DDC3 inset;
     padding: 15% 0;
     text-align: center;
 }
 
-.hero h2{
+.me h2{
     color: white;
     border-top: 2px solid white;
     letter-spacing: 10px;
 }
 
-.hero h1{
+.me h1{
     letter-spacing: 10px;
 }
 
@@ -104,18 +104,17 @@ li{
 .references{
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     background-color: #F7DDC3;
+
 }
 
 .references article{
-    width: 30%;
-    padding: 30px;
-    margin: 10px;
+    width: 33%;
     color: white;
     text-align: center;
     background-color: #647087;
+    position: relative;
 }
 
 
@@ -126,6 +125,7 @@ dl{
     display: flex;
     flex-wrap: wrap;
     padding: 0 0 0 40px;
+    margin: 0 -100px 0 0;
 }
 
 dt,
@@ -151,13 +151,17 @@ dt{
     padding-right: 15px;
 }
 
-.gh::before{
-    content: "\f082";
+.ph::before{
+    content: "\f095";
     font-family: "Font Awesome 5 Free", serif;
     font-weight: 900;
 }
 
-
+.em::before{
+    content: "\f0e0";
+    font-family: "Font Awesome 5 Free", serif;
+    font-weight: 900;
+}
 
 /*Meter*/
 meter{
