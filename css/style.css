@@ -24,9 +24,12 @@ h2 {
 /*aside*/
 
 aside{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin: 0 20px;
     background-color: #647087;
     flex-basis: 25%;
-    margin-right: 3%;
     padding: 0 10px;
 }
 
@@ -56,7 +59,9 @@ aside section h2:first-child{
 /*main*/
 
 main {
-    flex-basis: 75%;
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
 }
 
 main section > h2{
@@ -177,3 +182,14 @@ meter::-webkit-meter-bar{
     background: #FFFFFF none;
 }
 
+@media (max-width: 500px) {
+    .main-container {
+        width: 100%;
+        flex-wrap: wrap;
+        font-size: 1.2em;
+    }
+    aside,
+    main {
+        flex: 100%;
+    }
+}
